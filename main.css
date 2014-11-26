@@ -17,9 +17,35 @@ header {
 }
 header nav {
 	background: #CACACA;
+	padding: 0.5em;
+	position: relative;
 }
 header nav li {
 	display: inline-block;
+	padding: 0.5em 1em;
+}
+nav li + li {
+	border-left: solid 1px #fff;
+}
+nav a {
+	color: #007FB2;
+}
+nav a:hover {
+	color: #504833;
+}
+nav a:hover + .sub-menu {
+	max-height: 10em;
+}
+
+.sub-menu {
+	background: #621B4B;
+	max-height: 0;
+	left: 0;
+	overflow: hidden;
+	position:absolute;
+	top: 100%;
+	-webkit-transition: max-height 0.5s;
+	width: 100%;
 }
 
 #map-container{
@@ -53,7 +79,7 @@ header nav li {
 	overflow: hidden;
 }
 .item-list li {
-	margin: 1em 0;
+	margin: 1em 2em;
 }
 #main{
 	background: #0073B0;

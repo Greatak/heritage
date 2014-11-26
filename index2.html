@@ -35,6 +35,35 @@
 		</nav>
 	</header>
 	<main>
+		<style>
+			#blog-container {
+				background: #ddd;
+				float: left;
+				padding: 1em;
+				width: 30vw;
+			}
+			#blog-container img{
+				display: block;
+				margin: 1em auto;
+				width: 80%;
+			}
+			#blog-container article + article {
+				border-top: solid 1px #fff;
+				margin-top: 2em;
+			}
+		</style>
+		<div id=blog-container>
+			<article>
+				<h3>A title, yo</h3>
+				<p>Demo blog post snippet could talk about whatever seems cool or y'know, relevant</p>
+				<a>Read more...</a>
+			</article>
+			<article>
+				<h3>Or maybe just an image</h3>
+				<img src='http://www.heritageohio.org/wp-content/uploads/2014/10/taste-of-painesville-e1415129146475-255x144.jpg'>
+				<a>Read more...</a>
+			</article>
+		</div>
 		<div id=map-container></div>
 		<div id=control>
 			<ul id=categories>
@@ -74,6 +103,6 @@
 		</div>
 	</main>
 	<footer></footer>
-	<script src='app.js'></script>
+	<script src='app2.js'></script>
 </BODY>
 </HTML>

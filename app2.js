@@ -1,5 +1,5 @@
 var Map = (function(win,doc,undefined){
-	var width = document.body.clientWidth * 0.67,
+	var width = document.body.clientWidth * 0.33,
 			height = window.screen.height * 0.67;
 
 	var mapCategories = d3.selectAll('.category'),
