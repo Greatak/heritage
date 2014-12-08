@@ -9,71 +9,193 @@
 </HEAD>
 <BODY>
 	<header>
-		<img src="http://www.heritageohio.org/wp-content/themes/heritageohio/images/logo.png" alt="logo" width="280" height="107">
+		<img id=logo src="http://www.heritageohio.org/wp-content/themes/heritageohio/images/logo.png" alt="logo" width="280" height="107">
+		<p id=mission><span style="color: #007fb2">As Ohio’s official historic preservation and Main Street organization, Heritage Ohio fosters economic development and sustainability through preservation of historic buildings, revitalization of downtowns and neighborhood commercial districts,and promotion of cultural tourism.</span></p>
+		<form id=search><input class=search-box type=search placeholder="Looking for something?"><input class=search-button type=button value="Search"></form>
 		<nav>
 			<ul>
 				<li>
 					<a>Projects</a>
 					<ul class=sub-menu>
-						<a>Stuff</a>
-						<a>Things</a>
+						<li><a>Stuff</a></li>
+						<li><a>Things</a></li>
 					</ul>
 				</li>
 				<li>
 					<a>Resources</a>
+					<ul class=sub-menu>
+						<li><a>Stuff</a></li>
+						<li><a>Things</a></li>
+					</ul>
 				</li>
 				<li>
 					<a>Services</a>
+					<ul class=sub-menu>
+						<li><a>Stuff</a></li>
+						<li><a>Things</a></li>
+					</ul>
 				</li>
 				<li>
 					<a>Training + Workshops</a>
+					<ul class=sub-menu>
+						<li><a>Stuff</a></li>
+						<li><a>Things</a></li>
+					</ul>
 				</li>
 				<li>
 					<a>About Us</a>
+					<ul class=sub-menu>
+						<li><a>Stuff</a></li>
+						<li><a>Things</a></li>
+					</ul>
+				</li>
+				<li id=support-us>
+					<a><img src='example.com'>Support Us</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<div id=map-container></div>
-		<div id=control>
-			<ul id=categories>
-				<li id=main class=category data-type=main>
-					<h2>Main Street Programs</h2>
-					<ul class=item-list>
-						<li>Stuff</li>
-						<li>Things</li>
-						<li>Nests!</li>
+		<div id=banner>
+			<div class='center grid'>
+				<figure class=effect-marley>
+					<img src='http://upload.wikimedia.org/wikipedia/commons/a/a3/MillersburgOhio.JPG'>
+					<figcaption>
+						<h4>Best Banner Ever</h4>
+						<p>Once upon a time there was a super sweet banner. All the other banners be jelly.</p>
+						<a href=#>Read more...</a>
+					</figcaption>
+				</figure>
+			</div>
+			<p>Testing</p>
+		</div>
+		<div id=left-content>
+			<h2>EXCITING TITLE</h2>
+			<div id=map-container>
+				<div id=control>
+					<ul id=categories>
+						<li id=main class=category data-type=main>
+							<h2>REVITALIZATION</h2>
+							<ul class=item-list>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+							</ul>
+						</li>
+						<li id=easement class=category data-type=easement>
+							<h2>PRESERVATION</h2>
+							<ul class=item-list>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+							</ul>
+						</li>
+						<li id=news class=category data-type=news>
+							<h2>NEWS</h2>
+							<ul class=item-list>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+							</ul>
+						</li>
+						<li id=legislation class=category data-type=legal>
+							<h2>ADVOCACY</h2>
+							<ul class=item-list>
+								<li>Stuff</li>
+								<li>Things</li>
+								<li>Nests!</li>
+							</ul>
+						</li>
 					</ul>
-				</li>
-				<li id=easement class=category data-type=easement>
-					<h2>Easements</h2>
-					<ul class=item-list>
-						<li>Stuff</li>
-						<li>Things</li>
-						<li>Nests!</li>
+				</div>
+				<div id=map>
+					<div class='map-category-info main'>
+						<h2>Main Street Programs</h2>
+						<p>Description</p>
+					</div>
+					<div class='map-category-info easement'>
+						<h2>Easements</h2>
+						<p>Description</p>
+					</div>
+					<div class='map-category-info news'>
+						<h2>News</h2>
+						<p>Description</p>
+					</div>
+					<div class='map-category-info legal'>
+						<h2>Legislative Advocacy</h2>
+						<p>Description</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id=right-content>
+			<div id=calendar>
+				<h2>UPCOMING EVENTS</h2>
+				<div class=calendar-month>
+					<h3>DECEMBER 2014</h3>
+					<ul>
+						<li>
+							<time>3</time>
+							<p>Tourism</p>
+						</li>
+						<li>
+							<time>5</time>
+							<p>Young Ohio Preservationist Networking & Work Plan Session</p>
+						</li>
+						<li>
+							<time>19</time>
+							<p>Sustaining Ohio's Arts & Culture Ecosystem</p>
+						</li>
 					</ul>
-				</li>
-				<li id=news class=category data-type=news>
-					<h2>News</h2>
-					<ul class=item-list>
-						<li>Stuff</li>
-						<li>Things</li>
-						<li>Nests!</li>
+				</div>
+				<div class=calendar-month>
+					<h3>JANUARY 2015</h3>
+					<ul>
+						<li>
+							<time>1</time>
+							<p>Happy New Year</p>
+						</li>
 					</ul>
-				</li>
-				<li id=legislation class=category>
-					<h2>Legislative Advocacy</h2>
-					<ul class=item-list>
-						<li>Stuff</li>
-						<li>Things</li>
-						<li>Nests!</li>
-					</ul>
-				</li>
-			</ul>
+					<a href=#>View Full Calendar</a>
+				</div>
+				<div class=calendar-month>
+					<form>
+						<h3>E-NEWS SIGN UP</h3>
+						<p class=email>
+							<label>Email</label>
+							<input type=text placeholder="john@doe.com">
+						</p>
+						<p class=name>
+							<label>First Name</label>
+							<input type=text>
+						</p>
+						<p class=name>
+							<label>Last Name</label>
+							<input type=text>
+						</p>
+					</form>
+				</div>
+			</div>
 		</div>
 	</main>
-	<footer></footer>
+	<footer>
+		<p>&copy; 2014 Heritage Ohio - <a href=#>Sitemap</a> <a href=#>News RSS</a> <a href=#>Facebook</a> <a href=#>Twitter</a>
+		</p>
+		<p class=right>
+			846 1/2 East Main Street<br>
+			Columbus, OH 43205<br>
+			<b>P</b> 614.258.6200
+		</p>
+	</footer>
 	<script src='app.js'></script>
 </BODY>
 </HTML>
