@@ -1,13 +1,8 @@
 body {
 	background: #fff;
-	background-image: url('blocks.png');
-	background-position: top right;
-	background-repeat: no-repeat;
 	font-family: Arial;
 	font-size: 16px;
 	margin: 0;
-	overflow-y: scroll;
-	padding: 0 5vw;
 }
 
 ul {
@@ -63,10 +58,13 @@ header {
 }
 #logo {
 	background: radial-gradient(circle farthest-side, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%);
-	padding: 1em;
+	box-sizing: border-box;
+	padding: 0.5em 1em;
+	max-width: 50%;
+	z-index: 100;
 }
 #mission {
-	display: inline-block;
+	display: none;
 	line-height: 1.2;
 	padding: 1em 2em;
 	text-align: justify;
@@ -82,15 +80,55 @@ header {
 }
 header nav {
 	background: #0073B0;
+	box-sizing: border-box;
 	display: block;
+	height: 50%;
 	padding: 0.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+}
+#open-nav {
+	display: none;
+}
+#open-nav-label{
+	background: #0073B0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 15;
+}
+#open-nav-label::before {
+  color: #fff;
+	content: "MENU";
+	display: block;
+	letter-spacing: 3px;
+	padding: 0.5em;
+	text-align: right;
+	z-index: 20;
+}
+#open-nav ~ ul {
+	background: #0073B0;
+	display: none;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	z-index: 10;
+}
+#open-nav:checked ~ ul {
+	display: block;
 }
 header nav li {
-	display: inline-block;
+	margin-top: 19.1vw;
 	padding: 0.5em 1em;
 }
 nav li + li {
-	border-left: solid 1px #fff;
+	border-top: solid 1px #fff;
+	margin: 0;
 }
 nav a {
 	color: #fff;
@@ -349,7 +387,7 @@ footer p {
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
-	z-index: 1000;
+	z-index: 5;
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;

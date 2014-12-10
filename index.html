@@ -2,20 +2,25 @@
 <HTML>
 <HEAD>
 	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1">
 	<title>Home - Heritage Ohio</title>
 	<link rel=stylesheet href='main.css'>
 	<script src="http://d3js.org/d3.v3.min.js"></script>
 </HEAD>
 <BODY>
 	<header>
-		<img id=logo src="http://www.heritageohio.org/wp-content/themes/heritageohio/images/logo.png" alt="logo" width="280" height="107">
-		<p id=mission><span style="color: #007fb2">As Ohio’s official historic preservation and Main Street organization, Heritage Ohio fosters economic development and sustainability through preservation of historic buildings, revitalization of downtowns and neighborhood commercial districts,and promotion of cultural tourism.</span></p>
+		<img id=logo src="http://www.heritageohio.org/wp-content/themes/heritageohio/images/logo.png" alt="logo">
+		<div id=mission>
+			<p style='color:#739600'>Saving places that matter</p>
+			<p style='color:#CD202C'>Building community</p>
+			<p style='color:#002663'>Living better</p>
+		</div>
 		<form id=search><input class=search-box type=search placeholder="Looking for something?"><input class=search-button type=button value="Search"></form>
 		<nav>
+			<label id=open-nav-label for=open-nav></label>
+			<input type=checkbox class=hide id=open-nav>
 			<ul>
 				<li>
-					<a>Projects</a>
+					<a>Programs</a>
 					<ul class=sub-menu>
 						<li><a>Stuff</a></li>
 						<li><a>Things</a></li>
@@ -50,7 +55,7 @@
 					</ul>
 				</li>
 				<li id=support-us>
-					<a><img src='example.com'>Support Us</a>
+					<a><img src='http://www.heritageohio.org/wp-content/themes/heritageohio/images/supporticon.png'>Support Us</a>
 				</li>
 			</ul>
 		</nav>
@@ -66,8 +71,23 @@
 						<a href=#>Read more...</a>
 					</figcaption>
 				</figure>
+				<figure class=effect-marley>
+					<img src='http://upload.wikimedia.org/wikipedia/commons/a/a3/MillersburgOhio.JPG'>
+					<figcaption>
+						<h4>Best Banner Ever</h4>
+						<p>Once upon a time there was a super sweet banner. All the other banners be jelly.</p>
+						<a href=#>Read more...</a>
+					</figcaption>
+				</figure>
+				<figure class=effect-marley>
+					<img src='http://upload.wikimedia.org/wikipedia/commons/a/a3/MillersburgOhio.JPG'>
+					<figcaption>
+						<h4>Best Banner Ever</h4>
+						<p>Once upon a time there was a super sweet banner. All the other banners be jelly.</p>
+						<a href=#>Read more...</a>
+					</figcaption>
+				</figure>
 			</div>
-			<p>Testing</p>
 		</div>
 		<div id=left-content>
 			<h2>EXCITING TITLE</h2>
@@ -138,8 +158,8 @@
 			</div>
 		</div>
 		<div id=right-content>
+			<h2>UPCOMING EVENTS</h2>
 			<div id=calendar>
-				<h2>UPCOMING EVENTS</h2>
 				<div class=calendar-month>
 					<h3>DECEMBER 2014</h3>
 					<ul>

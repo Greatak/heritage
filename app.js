@@ -1,9 +1,11 @@
 var Map = (function(win,doc,undefined){
 	var width = d3.select('header').node().getBoundingClientRect().width
 				- d3.select('#control').node().getBoundingClientRect().width
-				- d3.select('#right-content').node().getBoundingClientRect().width,
-			height = window.innerHeight - document.querySelector('header').clientHeight,
-			listHeight = height - d3.select('#control').node().getBoundingClientRect().height + 4;
+				- d3.select('#right-content').node().getBoundingClientRect().width - 2,
+			height = Math.max(d3.select('#calendar').node().getBoundingClientRect().height,width),
+			listHeight = height - d3.select('#control').node().getBoundingClientRect().height + 3;
+			
+			console.log(width,height);
 	
 	var mapCategories = d3.selectAll('.category'),
 			map = d3.select('#map').append('svg')
